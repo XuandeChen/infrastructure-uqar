@@ -1017,45 +1017,59 @@
   </div>
 </div>
 
-  <!-- CONTACT -->
+<!-- French contact section: replace the current #contact section with this block. -->
 <section id="contact" class="contact-section">
-  <h2>Contactez Notre Équipe de Recherche</h2>
-  <p class="subtitle" > Vous souhaitez collaborer, poser une question ou rejoindre notre équipe ? Nous serons ravis d’échanger avec vous.</p>
+  <div class="contact-wrapper">
+    <div class="contact-panel contact-form-panel">
+      <h2>Contactez-nous</h2>
+      <p class="contact-intro">
+        Pour toute question sur les projets, collaborations ou opportunites, envoyez-nous un message.
+      </p>
 
-  <div class="contact-grid">
-    <!-- Colonne gauche : Formulaire + infos -->
-    <div class="contact-left">
-        <!-- Formulaire -->
-        <form class="contact-form" onsubmit="return sendEmail();">
-          <div class="form-row">
-            <input type="text" id="name" placeholder="Votre nom complet *" required>
-            <input type="email" id="email" placeholder="Votre adresse email *" required>
-          </div>
-          <input type="text" id="organization" placeholder="Organisation (facultatif)">
-          <textarea id="message" placeholder="Votre message *" required></textarea>
-          <button type="submit" class="btn-primary">📩 Envoyer le message</button>
-        </form>
-
-      <!-- Infos de contact -->
-      <div class="contact-info">
-        <h3>Informations de Contact</h3>
-        <p><strong>Email :</strong> xuande_chen@uqar.ca</p>
-        <p><strong>Téléphone :</strong> +1 (418) XXX-XXXX</p>
-        <p><strong>Adresse :</strong> UQAR - Département de Mathématiques, Informatique et Génie<br>300 Allée des Ursulines, Rimouski, QC G5L 3A1</p>
-
-        <h4>Suivez-nous</h4>
-        <div class="social-icons">
-          <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
-          <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
-        </div>
-      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Votre nom complet *" required>
+        <input type="email" name="email" placeholder="Votre adresse email *" required>
+        <input type="text" name="organization" placeholder="Organisation (facultatif)">
+        <textarea name="message" placeholder="Votre message *" required></textarea>
+        <button type="submit" class="contact-submit">Envoyer le message</button>
+      </form>
     </div>
 
-      <!-- Colonne droite : Carte -->
-      <div class="contact-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4954.9131125325985!2d-68.5233162!3d48.450855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c95d9bf34e2acab%3A0x9a4c836523397f8e!2sUQAR%20-%20Universit%C3%A9%20du%20Qu%C3%A9bec%20%C3%A0%20Rimouski!5e1!3m2!1sfr!2sca!4v1783544490173!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <aside class="contact-panel contact-info-panel">
+      <h3>Informations de contact</h3>
+
+      <dl class="contact-details">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:xuande_chen@uqar.ca">xuande_chen@uqar.ca</a></dd>
+        </div>
+        <div>
+          <dt>Telephone</dt>
+          <dd>+1 (418) XXX-XXXX</dd>
+        </div>
+        <div>
+          <dt>Adresse</dt>
+          <dd>
+            UQAR - Departement de Mathematiques, Informatique et Genie<br>
+            300 Allee des Ursulines, Rimouski, QC G5L 3A1
+          </dd>
+        </div>
+      </dl>
+
+      <div class="contact-social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
       </div>
 
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.2073332903256!2d-68.51467612326228!3d48.45255132918049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c95d9bf34e2acab%3A0x9a4c836523397f8e!2sUQAR%20-%20Universit%C3%A9%20du%20Qu%C3%A9bec%20%C3%A0%20Rimouski!5e0!3m2!1sfr!2sca!4v1707882835781!5m2!1sfr!2sca"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Carte de l'UQAR a Rimouski"></iframe>
+      </div>
+    </aside>
   </div>
 </section>
 
