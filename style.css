@@ -152,16 +152,20 @@ html {
   text-decoration: none;
 }
 
+.site-brand:hover {
+  text-decoration: none;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 36px;
+  width: 56px;
+  height: 34px;
   border-radius: 6px;
-  background: #0f3b66;
+  background: #174b6f;
   color: #fff;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
@@ -169,19 +173,21 @@ html {
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .brand-text strong {
-  max-width: 320px;
-  font-size: 0.92rem;
+  color: #102033;
+  font-size: 0.9rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .brand-text small {
-  margin-top: 3px;
-  color: #526070;
-  font-size: 0.78rem;
+  margin-top: 2px;
+  color: #5b677a;
+  font-size: 0.74rem;
+  white-space: nowrap;
 }
 
 
