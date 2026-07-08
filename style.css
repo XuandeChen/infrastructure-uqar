@@ -79,33 +79,29 @@ html {
 /* NAVBAR */
 
 /* Masquer la navbar avec transition fluide */
-
-
 .navbar.hidden {
   transform: translateY(-100%);
-  transition: transform 0.3s ease;
 }
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: linear-gradient(120deg, #e0f2fe, #dbeafe); /* 🔷 même fond que .hero */
-  backdrop-filter: none;
-  box-shadow: none;
+  min-height: 76px;
+  background: rgba(239, 246, 255, 0.96);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 14px 40px;
-  transition: all 0.3s ease;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 12px 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .navbar.scrolled {
-  background:linear-gradient(120deg, #e0f2fe, #dbeafe);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
 }
+
 .burger {
   display: none;
   font-size: 24px;
@@ -150,9 +146,9 @@ html {
 .site-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 260px;
-  color: var(--text-color, #16213e);
+  gap: 10px;
+  flex: 0 0 auto;
+  color: #102033;
   text-decoration: none;
 }
 
