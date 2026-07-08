@@ -109,15 +109,24 @@ html {
   user-select: none;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
 
 .nav-links a {
   position: relative;
-  padding: 6px 8px;
-  margin: 0 10px;
-  font-weight: 500;
+  padding: 6px 0;
+  margin: 0;
   color: #334155;
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
 .nav-links a::after {
@@ -125,10 +134,10 @@ html {
   position: absolute;
   left: 0;
   bottom: -4px;
-  width: 0%;
+  width: 0;
   height: 2px;
   background: #2563eb;
-  transition: width 0.3s;
+  transition: width 0.25s ease;
 }
 
 .nav-links a:hover::after,
@@ -138,7 +147,7 @@ html {
 
 .nav-links a.active {
   color: #2563eb;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -480,15 +489,14 @@ html {
 }
 /* Bouton de la langue */
 .lang-btn {
+  flex: 0 0 auto;
   background: transparent;
   border: 1px solid #2563eb;
   color: #2563eb;
-  padding: 6px 14px;
+  padding: 6px 13px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  margin-left: 20px;
-  transition: background 0.3s ease;
 }
 
 .lang-btn:hover {
@@ -1622,28 +1630,45 @@ section {
 
   .burger {
     display: block;
+    font-size: 26px;
+    cursor: pointer;
   }
 
+  .navbar {
+    min-height: 72px;
+    padding: 12px 20px;
+  }
+  
+  .brand-text strong {
+    font-size: 0.82rem;
+  }
+
+  .brand-text small {
+    font-size: 0.7rem;
+  }
+  
   .nav-links {
     display: none;
     position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    top: 72px;
+    right: 16px;
+    width: min(280px, calc(100vw - 32px));
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+    border-radius: 12px;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    z-index: 999;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px;
+    white-space: normal;
   }
 
-  .nav-links a {
-    display: block;
-    margin: 0;
-    letter-spacing: 0.4px;
-    font-size: 15px;
-
+  .nav-links a,
+  .nav-links .lang-btn {
+    width: 100%;
+    padding: 10px 12px;
+    text-align: left;
   }
 
   .nav-links.show {
