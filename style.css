@@ -1413,40 +1413,6 @@ section {
 }
 
 /* RESPONSIVE */
-
-/* added XC */
-
-@media (max-width: 900px) {
-  .site-brand {
-    min-width: 0;
-  }
-
-  .brand-text strong {
-    max-width: 240px;
-    font-size: 0.84rem;
-  }
-
-  .brand-text small {
-    font-size: 0.74rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .brand-mark {
-    width: 48px;
-    height: 32px;
-    font-size: 0.75rem;
-  }
-
-  .brand-text strong {
-    max-width: 210px;
-  }
-
-  .hero h1 {
-    font-size: clamp(2rem, 11vw, 3.2rem);
-  }
-}
-
 @media (max-width: 600px) {
   .modal-content {
     max-height: 95vh;
@@ -1573,6 +1539,39 @@ section {
 
 
 /* Responsive */
+
+@media (max-width: 900px) {
+  .site-brand {
+    min-width: 0;
+  }
+
+  .brand-text strong {
+    max-width: 240px;
+    font-size: 0.84rem;
+  }
+
+  .brand-text small {
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-mark {
+    width: 48px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .brand-text strong {
+    max-width: 210px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 11vw, 3.2rem);
+  }
+}
+
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
