@@ -201,19 +201,23 @@ html {
 
 
 /* HERO SECTION */
-
-
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(120deg, #e0f2fe, #dbeafe); /* 💠 Bleu doux */
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 100px 60px;
-  gap: 40px;
-  flex-wrap: nowrap;
+  background: linear-gradient(120deg, #eef6fb, #f8fafc);
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  align-items: center;
+  padding: 72px 56px;
+  gap: 48px;
   text-align: left;
+}
+
+.hero-left {
+  max-width: 680px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
 
 .blur-bg {
@@ -228,24 +232,23 @@ html {
   z-index: 0;
 }
 
-
-
 .badge {
-  background: #e2e8f0;
-  color: #334155;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 14px;
+  background: rgba(23, 75, 111, 0.1);
+  color: #174b6f;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
   display: inline-block;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 0 18px;
-  color: #101936;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
-  line-height: 1.05;
+  color: #0f172a;
+  font-size: clamp(2.3rem, 4.4vw, 4.2rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
@@ -261,10 +264,43 @@ html {
 }
 
 .hero-subtitle {
-  max-width: 680px;
+  max-width: 640px;
   color: #334155;
-  font-size: clamp(1rem, 1.4vw, 1.18rem);
-  line-height: 1.65;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 680px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.14);
+}
+
+.hero-infos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+  font-size: 0.88rem;
+  color: #334155;
+}
+
+.hero-infos div {
+  min-height: 56px;
+  padding: 10px 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .highlight {
@@ -316,7 +352,6 @@ html {
   width: 70%;
 }
 
-
 .btn-outline {
   padding: 12px 20px;
   font-weight: 600;
@@ -354,34 +389,11 @@ html {
 }
 
 
-
-.hero-infos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 14px;
-  color: #1e293b;
-  margin-top: 20px;
-}
-
-.hero-infos div {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .hero-infos img {
   width: 18px;
   height: 18px;
 }
 
-.hero-right {
-  position: relative;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
@@ -399,16 +411,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.hero-left {
-  flex: 1;
-  max-width: 600px;
-  align-self: flex-start;  /* ✅ Cela aligne le texte en haut */
-  text-align: left;
-  margin-top: 0;           /* ✅ Au cas où un margin-top auto existe */
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
+
 
 
 /* A PROPOS SECTION */
