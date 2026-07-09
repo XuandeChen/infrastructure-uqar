@@ -2070,15 +2070,60 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .brand-text strong {
     display: none;
   }
 }
 
-@media (max-width: 920px) {
+@media (mmax-width: 1024px) {
   .brand-text {
     display: none;
+  }
+}
+
+/* Tablet header fix: iPad Air, iPad Mini, small laptops */
+@media (max-width: 1024px) {
+  .site-brand .brand-text {
+    display: none !important;
+  }
+
+  .site-brand {
+    min-width: auto !important;
+    max-width: none !important;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 16px;
+    width: min(300px, calc(100vw - 32px));
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px;
+    white-space: normal;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a,
+  .nav-links .lang-btn {
+    width: 100%;
+    padding: 10px 12px;
+    text-align: left;
+    margin: 0;
   }
 }
 
