@@ -74,8 +74,6 @@ html {
 }
 
 
-
-
 /* NAVBAR */
 
 /* Masquer la navbar avec transition fluide */
@@ -150,8 +148,6 @@ html {
   font-weight: 700;
 }
 
-
-
 .site-brand {
   display: flex;
   align-items: center;
@@ -198,7 +194,6 @@ html {
   font-size: 0.74rem;
   white-space: nowrap;
 }
-
 
 /* HERO SECTION */
 .hero {
@@ -370,6 +365,49 @@ html {
   color: white;
   border-color: #2563eb;
   transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 56px 28px;
+    gap: 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7vw, 3.4rem);
+  }
+
+  .hero-right img {
+    max-width: 720px;
+  }
+
+  .hero-infos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 44px 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 10vw, 2.8rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons a {
+    text-align: center;
+  }
 }
 
 /* Animation pulsée */
